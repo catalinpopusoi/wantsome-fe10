@@ -1,0 +1,38 @@
+@mixin loader($ball-color, $speed, $size) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    height: $size;
+    width: $size;
+    background: $ball-color;
+    border-radius: 50%;
+    margin-right: 10px;
+    animation-iteration-count: infinite;
+    animation-duration: $speed;
+    animation-timing-function: linear;
+    animation-name: ball;
+
+    &.ball:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    &.ball:last-child {
+      animation-delay: 0.4s;
+    }
+  }
+}
+
+@keyframes ball {
+  10% {
+    transform: translateY(0);
+  }
+
+  70% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

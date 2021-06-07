@@ -1,0 +1,67 @@
+@import "colors";
+@import "grid";
+@import "typography";
+@import "buttons";
+@import "loader";
+
+@mixin custom-scrollbar($scrollbar-width, $thumb-color: red) {
+  &::-webkit-scrollbar {
+    width: $scrollbar-width;
+  }
+  &::-webkit-scrollbar-track {
+    background: #000;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $thumb-color;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+.homepage {
+  height: 200vh;
+  @include custom-scrollbar(10px, yellow);
+
+  .grid {
+    margin-top: 50px;
+  }
+}
+
+.scrollable {
+  height: 400px;
+  overflow: auto;
+  border: 1px solid black;
+  margin-top: 20px;
+  @include custom-scrollbar(24px, blue);
+
+  .content {
+    height: 800px;
+  }
+}
+
+%text {
+  color: #282828;
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: normal;
+}
+
+p {
+  @extend %text;
+  font-size: 16px;
+}
+
+h1 {
+  @extend %text;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.loader-1 {
+  @include loader(black, 2s, 25px);
+}
+
+.loader-2 {
+  @include loader(blue, 1s, 5px);
+}

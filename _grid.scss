@@ -1,0 +1,13 @@
+$grid-height: 500px;
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: $grid-height;
+
+  .cell {
+    border: 1px solid black;
+    box-sizing: border-box;
+  }
+}

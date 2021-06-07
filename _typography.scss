@@ -1,0 +1,13 @@
+@import "colors";
+
+$font-size-h1: 48px;
+$font-size-paragraph: 24px;
+
+h1 {
+  font-size: $font-size-h1;
+  color: $primary-color;
+}
+
+p {
+  font-size: $font-size-paragraph;
+}
