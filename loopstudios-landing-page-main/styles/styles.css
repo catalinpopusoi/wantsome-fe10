@@ -13,6 +13,11 @@ ul {
   list-style: none;
 }
 
+.container {
+  width: 1020px;
+  margin: 0 auto;
+}
+
 .hero {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4))), url("../images/desktop/image-hero.jpg") no-repeat center;
   background: linear-gradient(0deg rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/desktop/image-hero.jpg") no-repeat center;
@@ -71,8 +76,38 @@ ul {
   height: 100%;
 }
 
-.container {
-  width: 960px;
-  margin: 0 auto;
+.interactive {
+  margin: 150px auto;
+  position: relative;
+}
+
+.interactive img {
+  display: block;
+}
+
+.interactive .text {
+  background-color: white;
+  padding-top: 60px;
+  padding-left: 60px;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.interactive .text h1 {
+  font-family: "Josephin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 48px;
+  text-transform: uppercase;
+  margin: 0 0 24px;
+}
+
+.interactive .text p {
+  font-size: 15px;
+  color: #8c8c8c;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=styles.css.map */
