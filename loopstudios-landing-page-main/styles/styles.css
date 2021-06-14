@@ -63,22 +63,22 @@ ul {
   margin: 60% 0 0;
 }
 
-.interactive {
+.interactive.container {
   margin: 150px auto;
   position: relative;
 }
 
-.interactive img {
+.interactive.container img {
   max-width: 100%;
   display: block;
 }
 
-.interactive .text {
+.interactive.container .text {
   background-color: white;
   text-align: center;
 }
 
-.interactive .text h1 {
+.interactive.container .text h1 {
   font-family: "Josephin Sans", sans-serif;
   font-weight: 300;
   font-size: 40px;
@@ -86,7 +86,7 @@ ul {
   margin: 24px 0;
 }
 
-.interactive .text p {
+.interactive.container .text p {
   font-size: 20px;
   color: #8c8c8c;
   font-family: "Alata", sans-serif;
@@ -264,14 +264,11 @@ footer .social-and-copyright p {
     background: linear-gradient(0deg rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/desktop/image-hero.jpg") no-repeat center;
     height: 650px;
   }
+  .hero h1 {
+    margin: 0;
+  }
   .hero header nav {
     display: block;
-  }
-  .hero h1 {
-    font-size: 60px;
-    padding: 25px 40px;
-    width: 60%;
-    margin: 0;
   }
   .hero .container {
     display: -webkit-box;
@@ -286,21 +283,9 @@ footer .social-and-copyright p {
             justify-content: space-between;
     height: 100%;
   }
-  .interactive .text {
-    padding-top: 60px;
-    padding-left: 60px;
-    width: 50%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    text-align: left;
-  }
-  .interactive .text h1 {
-    font-size: 48px;
-    margin-top: 0;
-  }
-  .interactive .text p {
-    font-size: 15px;
+  .interactive img {
+    max-width: 70%;
+    margin: 0 auto;
   }
   .our-creations header {
     display: -webkit-box;
@@ -324,6 +309,9 @@ footer .social-and-copyright p {
   }
   .our-creations article {
     height: 450px;
+  }
+  .our-creations .button-wrapper {
+    display: none;
   }
   footer {
     text-align: left;
@@ -364,6 +352,35 @@ footer .social-and-copyright p {
   }
   footer .social-and-copyright ul {
     margin: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero h1 {
+    font-size: 60px;
+    padding: 25px 40px;
+    width: 60%;
+    margin: 0;
+  }
+  .interactive.container img {
+    max-width: 100%;
+    margin: 0;
+  }
+  .interactive.container .text {
+    padding-top: 60px;
+    padding-left: 60px;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: left;
+  }
+  .interactive.container .text h1 {
+    font-size: 48px;
+    margin-top: 0;
+  }
+  .interactive.container .text p {
+    font-size: 15px;
   }
 }
 
